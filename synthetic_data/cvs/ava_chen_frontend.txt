@@ -1,0 +1,21 @@
+Ava Chen
+Senior Frontend Engineer — 7 years
+
+Summary
+Frontend engineer specializing in large React + TypeScript applications and design
+systems. I have owned complex UIs end to end and mentored teams of 4-6 engineers.
+
+Experience
+- Senior Frontend Engineer, Lumen Analytics (4 yrs): Led the rebuild of the analytics
+  dashboard in React + TypeScript; built and maintained the company design system used
+  by 30+ engineers; drove WCAG 2.1 AA accessibility compliance; introduced Playwright
+  end-to-end testing.
+- Frontend Engineer, Brightcart (3 yrs): Built checkout and account flows in React;
+  improved Core Web Vitals (LCP -38%).
+
+Skills
+React, TypeScript, Next.js, design systems, accessibility (WCAG), Jest, Playwright,
+GraphQL, Node.js basics, Storybook.
+
+Education
+BSc Computer Science, University of Bristol.

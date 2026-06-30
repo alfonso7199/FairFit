@@ -1,0 +1,19 @@
+Sofia Ruiz
+Junior Frontend Developer — 1.5 years
+
+Summary
+Career-changer (former graphic designer) now building web UIs. Strong eye for design
+and accessibility; growing React skills.
+
+Experience
+- Junior Frontend Developer, Maple Studio (1.5 yrs): Built marketing pages and small
+  React components; collaborated closely with designers; improved accessibility of the
+  component library.
+- Freelance graphic & UI designer (4 yrs prior).
+
+Skills
+React (intermediate), JavaScript, HTML/CSS, Figma, accessibility, design sense.
+Learning TypeScript and testing.
+
+Education
+Bootcamp: Full-stack Web Development, Ironhack. BA Graphic Design.

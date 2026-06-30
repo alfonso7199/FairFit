@@ -1,0 +1,17 @@
+Marco Li
+Full-stack Engineer — 5 years
+
+Summary
+Full-stack engineer comfortable across React frontends and Node/Express backends.
+Product-minded, shipped features from database to UI in small teams.
+
+Experience
+- Full-stack Engineer, Pinwheel (3 yrs): Built customer-facing features in React with
+  TypeScript and a Node/PostgreSQL backend; led a small redesign of the onboarding UI.
+- Software Engineer, Kestrel Apps (2 yrs): React Native and web; some design-system work.
+
+Skills
+React, TypeScript, Node.js, Express, PostgreSQL, REST, some accessibility, Git.
+
+Education
+BEng Software Engineering, Politecnico di Milano.

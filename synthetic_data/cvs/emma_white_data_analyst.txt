@@ -1,0 +1,18 @@
+Emma White
+Data Analyst — 3 years
+
+Summary
+Analyst strong in SQL and BI storytelling. Some exposure to statistics and ML, eager
+to grow into data science.
+
+Experience
+- Data Analyst, Harbor Retail (2 yrs): SQL, Looker dashboards, weekly insight reports
+  for merchandising; supported a few A/B test readouts.
+- Junior Analyst, Pebble (1 yr): Excel/SQL reporting.
+
+Skills
+SQL, Looker, Tableau, Excel, basic Python, basic statistics. Some experimentation
+exposure; no production ML.
+
+Education
+BSc Economics, University of Warsaw.

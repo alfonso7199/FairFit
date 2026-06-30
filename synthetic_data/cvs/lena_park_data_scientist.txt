@@ -1,0 +1,19 @@
+Lena Park
+Data Scientist — 5 years
+
+Summary
+Data scientist who ships models that change product decisions and communicates results
+clearly to non-technical stakeholders.
+
+Experience
+- Data Scientist, Foldr (3 yrs): Built churn and recommendation models in Python; ran
+  the A/B testing program (designed and analyzed 40+ experiments); presented insights
+  to product and exec teams.
+- Data Analyst -> Data Scientist, Vela Health (2 yrs): SQL analytics, first ML models.
+
+Skills
+Python, pandas, scikit-learn, statistics, A/B testing, experimentation, SQL, some
+PyTorch, dashboarding. Strong communicator.
+
+Education
+MSc Statistics, University of Edinburgh.

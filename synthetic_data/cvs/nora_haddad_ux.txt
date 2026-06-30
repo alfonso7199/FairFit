@@ -1,0 +1,18 @@
+Nora Haddad
+Product / UX Designer — 6 years
+
+Summary
+Product designer who shapes end-to-end experiences and partners closely with frontend
+engineers. Maintains design systems in Figma.
+
+Experience
+- Senior Product Designer, Vantage (4 yrs): Owned design for a B2B analytics product;
+  built and ran the Figma design system; ran usability research and accessibility audits.
+- Product Designer, Tidal (2 yrs): Mobile and web design.
+
+Skills
+Figma, design systems, UX research, accessibility, prototyping, light HTML/CSS.
+Not an engineer (does not code production React).
+
+Education
+BA Interaction Design, Malmö University.

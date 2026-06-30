@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FairFit — human-first candidate screening</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 20a6 6 0 0 1 12 0M16 6a3 3 0 0 1 0 6m1 8a6 6 0 0 0-3-5.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 13 4 4 10-10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4 2 20h20L12 4Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M12 10v4m0 3h.01" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+      <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4m0 0 4 4m-4-4-4 4M5 20h14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="2.7" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-dot" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" fill="currentColor"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="topbar">
+    <a class="brand" href="/"><span class="brand-mark"><svg><use href="#i-people"/></svg></span>FairFit</a>
+    <span class="topbar-tag">Human-first screening · OpenAI Agents SDK</span>
+  </header>
+
+  <main class="shell">
+    <section class="intro">
+      <p class="eyebrow">Hiring, the way it should be</p>
+      <h1>Screen candidates like a <em>human</em>, not a keyword filter.</h1>
+      <p class="lede">Describe the role — or just what you're really looking for — drop in a stack of CVs,
+        and FairFit gives you a clear shortlist: who's worth a deeper look, who's a maybe, and who to set
+        aside, each with a plain reason and the full CV one click away.</p>
+    </section>
+
+    <section id="setup" class="setup">
+      <div class="card setup-role">
+        <h2>1 · The role</h2>
+        <div class="examples"><span class="examples-label">Examples</span><div id="role-chips" class="chips"></div></div>
+        <textarea id="brief" rows="7" placeholder="Describe the role or what you're looking for in a person..."></textarea>
+      </div>
+
+      <div class="card setup-cvs">
+        <div class="cvs-head"><h2>2 · The candidates</h2><label class="selall"><input type="checkbox" id="select-all"> Select all</label></div>
+        <ul id="cv-list" class="cv-list"></ul>
+        <div class="drop-inline" id="dropzone" tabindex="0">
+          <svg><use href="#i-upload"/></svg><span>Drop your own CVs <small>(.txt · .md, many at once)</small></span>
+          <input id="file-input" type="file" multiple hidden accept=".txt,.md,.text" />
+        </div>
+        <ul id="upload-list" class="upload-list"></ul>
+      </div>
+    </section>
+
+    <div class="run-row">
+      <button id="run-btn" class="btn-primary" disabled>Screen candidates <svg><use href="#i-arrow"/></svg></button>
+      <span id="sel-count" class="sel-count"></span>
+      <p id="input-hint" class="hint"></p>
+    </div>
+
+    <section id="board" class="board hidden">
+      <p id="run-status" class="run-status"></p>
+      <div id="criteria" class="criteria card"></div>
+      <div class="columns">
+        <div class="column col-favorable"><div class="col-head"><span class="ch-name"><svg><use href="#i-check"/></svg> Favorable</span><span id="count-favorable" class="ch-count">0</span></div><div id="col-favorable" class="col-body"></div></div>
+        <div class="column col-medium"><div class="col-head"><span class="ch-name"><svg><use href="#i-dot"/></svg> Medium</span><span id="count-medium" class="ch-count">0</span></div><div id="col-medium" class="col-body"></div></div>
+        <div class="column col-unfavorable"><div class="col-head"><span class="ch-name"><svg><use href="#i-x"/></svg> Unfavorable</span><span id="count-unfavorable" class="ch-count">0</span></div><div id="col-unfavorable" class="col-body"></div></div>
+      </div>
+    </section>
+
+    <div id="reset-row" class="reset-row hidden"><button id="reset-btn" class="btn-ghost">New screening</button></div>
+  </main>
+
+  <div id="modal" class="modal hidden"><div class="modal-card"><button class="modal-x" id="modal-x"><svg><use href="#i-x"/></svg></button><div id="modal-body"></div></div></div>
+
+  <footer class="foot">
+    <span>FairFit · HCLTech–OpenAI Agentic AI Hackathon</span>
+    <span>Built with the OpenAI Agents SDK and Codex · keeps a human in the loop</span>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

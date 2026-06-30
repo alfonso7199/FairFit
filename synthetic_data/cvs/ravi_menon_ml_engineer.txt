@@ -1,0 +1,18 @@
+Ravi Menon
+Machine Learning Engineer — 4 years
+
+Summary
+ML engineer focused on productionizing models (MLOps). Strong Python and infrastructure;
+less focused on experiment design / statistics.
+
+Experience
+- ML Engineer, Quanta (3 yrs): Built model training and serving pipelines (Python,
+  Docker, Kubernetes, MLflow); deployed models to production; monitoring and retraining.
+- Data Engineer, Brackish (1 yr): Spark pipelines.
+
+Skills
+Python, PyTorch, MLflow, Docker, Kubernetes, Airflow, AWS SageMaker, SQL. Limited
+experience designing A/B tests.
+
+Education
+BSc Computer Engineering, IIT Madras.

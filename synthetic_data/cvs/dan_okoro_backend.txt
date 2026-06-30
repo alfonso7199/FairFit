@@ -1,0 +1,16 @@
+Dan Okoro
+Backend Engineer — 6 years
+
+Summary
+Backend engineer focused on high-throughput Java services and distributed systems.
+
+Experience
+- Senior Backend Engineer, Tollgate Payments (4 yrs): Java/Spring microservices handling
+  millions of transactions/day; Kafka pipelines; on-call leadership.
+- Backend Engineer, Northstar (2 yrs): Java, PostgreSQL, AWS.
+
+Skills
+Java, Spring Boot, Kafka, PostgreSQL, AWS, Docker, Kubernetes. No frontend experience.
+
+Education
+MSc Distributed Systems, KTH Stockholm.
