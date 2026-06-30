@@ -6,12 +6,6 @@
       "includeFiles": [
         "web/**",
         "synthetic_data/**"
-      ],
-      "excludeFiles": [
-        "**/__pycache__/**",
-        "**/*.pyc",
-        ".venv/**",
-        "venv/**"
       ]
     }
   }
