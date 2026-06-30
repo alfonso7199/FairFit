@@ -3,10 +3,7 @@
   "functions": {
     "server.py": {
       "maxDuration": 60,
-      "includeFiles": [
-        "web/**",
-        "synthetic_data/**"
-      ]
+      "includeFiles": "{web/**,synthetic_data/**}"
     }
   }
 }
